@@ -19,3 +19,4 @@ jobs:
           password: ${{ secrets.CR_PAT }}
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/hello-alpine:${{ github.sha }}
+
